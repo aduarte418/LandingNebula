@@ -1,0 +1,118 @@
+/* Estilo general para el body */
+body{
+    background-color: #04024d;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, #060364,  #000000); 
+}
+
+/* Propiedades del contenedor de la zona Hero */
+#hero-zone{
+    margin: 20px auto;
+    position: relative;
+}
+
+/* Estilo para el título */
+#title{
+    font-size: 6rem;
+    color: #f0f0f0;
+    font-family: 'Black Ops One', sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo para el subtítulo */
+#subtitle{
+    font-size: 2rem;
+    color: #f0f0f0;
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Estilo para el grid que contiene los proyectos de Nebula */
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estlo para el título "Mis proyectos" */
+#projects-title{
+    font-size: 2rem;
+    color: #f0f0f0;
+    font-family: 'Black Ops One', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el título de los proyectos */
+.project h3{
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Estilo para el botón de contacto */
+.btn{
+    background-color: #2d90c9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 250px;
+    height: 100px;
+    position: relative;
+
+}
+
+/* Estilo para el hover del botón */
+.btn:hover{
+    background-color: #13bfeb;
+}
+
+/* Estilo para la imagen del botón */
+#btn-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo para el texto del botón */
+.btn-text{
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo para las citas de las imágenes */
+.cites{
+    font-size: 0.8em;
+    color: #cccccc;
+    font-style: italic;
+}
+
+
+/* Estilo para el texto del footer */
+.foot-text{
+    font-size: 0.7em;
+    color: #cccccc;
+    font-style: italic;
+    font-family: 'Press Start 2P', sans-serif;
+    text-align: center;
+
+}
+

@@ -1,11 +1,10 @@
 /* Estilo general para el body */
 body{
     background-color: #04024d;
-    color: ffffff;
+    color: #ffffff;
     text-align: center;
-    background: linear-gradient(to bottom, #050252,  #000000); 
+    background: linear-gradient(to bottom, #04024d,  #000000); 
 }
-
 
 /* Estilo de la barra de navegación */
 #navbar{
@@ -24,12 +23,12 @@ body{
 
 /* Propiedad para el margen entre los elementos de la barra de navegación (lista) */
 #navbar li{
-    margin: 0 15px;
+    margin: 0 50px;
 }
 
 /* Estilo del texto que actúa como enlace a las secciones */
 #navbar a{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-family: 'Press Start 2P', sans-serif;
     font-size: 1.1em;
@@ -68,7 +67,6 @@ body{
     transform: translate(-50%, -50%);
 }
 
-
 /* Estilo para el grid que contiene los proyectos de Nebula */
 #grid{
     display: grid;
@@ -96,7 +94,7 @@ body{
 /* Estilo para el botón de contacto */
 .btn{
     background-color: #2d90c9;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -107,7 +105,6 @@ body{
     width: 250px;
     height: 100px;
     position: relative;
-
 }
 
 /* Estilo para el hover del botón */
@@ -139,7 +136,6 @@ body{
     font-style: italic;
 }
 
-
 /* Estilo para el texto del footer */
 .foot-text{
     font-size: 0.7em;
@@ -147,6 +143,4 @@ body{
     font-style: italic;
     font-family: 'Press Start 2P', sans-serif;
     text-align: center;
-
 }
-

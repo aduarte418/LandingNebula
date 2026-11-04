@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebula</title>
-
     <!--Enlace al icono de la web en la pestaña-->
     <link rel="icon" href="assets/img/nebula-logo.svg" type="image/svg">
-
     <!--Enlaces a fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <!--Press Start 2P-->
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
-
     <!--Enlace a la hoja de estilo CSS-->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -26,27 +23,24 @@
     <!-- Zona hero-->
         <!--Header para el logo y el título de la página-->
         <header>
-
-
             <!--Barra de navegación para dirigir a cada sección de recursos-->
-
             <nav id="navbar">
                 <ul>
                     <li><a href="#hero-zone">Inicio</a></li>
                     <li><a href="#projects-title">Proyectos</a></li>
+                    <li><a href="#btn-img">Contacto</a></li>
                     <li><a href="#video">Vídeo</a></li>
                     <li><a href="#ambient-audio">Audio</a></li>
                 </ul>
 
-
             <div id="hero-zone">
                 <!--Titulo-->
-                <h1 id="title">Nébula</h1>
+                <h1 id="title">Nebula</h1>
                 <!--Subtítulo-->
                 <h2 id="subtitle">Artista de la galaxia</h2>
                 <div id="img-hero">
                     <figure>
-                        <img src="assets/img/hero-image.webp" alt="Imagen espacial estilo nebulosa como fondo de página" width="100%" height="auto" loading="lazy">
+                        <img src="assets/img/hero-image.webp" alt="Imagen espacial estilo nebulosa como fondo de página" width="1920px" height="auto" loading="lazy">
                         <figcaption class="cites">
                             "Imagen espacio-galaxia-universo-nebulosa" por Alexander Saltaev, CC0 BY-NC-ND 4.0
                         </figcaption>
@@ -59,7 +53,12 @@
         <main>
                 <!---Imagen logo-->
                 <div id="logo">
-                    <img src="assets/img/nebula-logo.svg" alt="Logo de la página web de Nebula" width="100px" height="auto" loading="lazy">
+                    <figure>
+                        <img src="assets/img/nebula-logo.svg" alt="Logo de la página web de Nebula" width="100px" height="auto" loading="lazy">
+                        <figcaption class="cites">
+                            "Logo Nebula", Autor Desconocido/Pixabay, CC0 BY-NC-ND 4.0
+                        </figcaption>
+                    </figure>
                 </div>
 
             <h1 id="projects-title">Mis proyectos</h1>
@@ -121,31 +120,33 @@
 
             <br>
 
-
             <!--Vídeo-->
-            <video id="video" controls poster="assets/img/poster.webp" width="800px" height="600px" autoplay muted loop>
-        
-                <source src="assets/video/night-sky-video.mp4" type="video/mp4">
-
-            </video>
+            <figure>
+                <video id="video" controls poster="assets/img/poster.webp" width="800px" height="600px" autoplay muted loop>
+                    <source src="assets/video/night-sky-video.mp4" type="video/mp4">
+                </video>
+                <figcaption class="cites">
+                    "Vídeo cielo nocturno" por Branislav Schmogrovits, CC0 BY-NC-ND 4.0
+                </figcaption>
+            </figure>
 
             <br>
             <!---Audio ambiente-->
-            <audio id="ambient-audio" controls preload="metadata" autoplay muted loop>
-                <source src="assets/audio/juliush-interstellar-science-fiction-sounds.mp3" type="audio/mpeg">
-                Tu navegador no soporta la reproducción de audio.
-            </audio>
-
+            <figure>
+                <audio id="ambient-audio" controls preload="metadata" autoplay muted loop>
+                    <source src="assets/audio/juliush-interstellar-science-fiction-sounds.mp3" type="audio/mpeg">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+                <figcaption class="cites">
+                    "Interstellar Science Fiction Sounds" por JuliusH, CC0 BY-NC-ND 4.0
+                </figcaption>
+            </figure>
             <br>
-
         </main>
-
         <footer>
             <br>
-            <p class="foot-text">© 2026 Nébula</p>
+            <p class="foot-text">© 2026 Nebula</p>
             <p class="foot-text">Todos los derechos reservados</p>
         </footer>
-
-
 </body>
 </html>

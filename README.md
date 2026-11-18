@@ -96,6 +96,7 @@ Vídeo visualizado en la ventana modal en Edge
 ![Captura Vídeo Modal Edge](assets/screenshots/image-3.png)
 
 *Firefox*
+
 Landing visualizada en Firefox
 ![Captura Landing Firefox](assets/screenshots/image-5.png)
 

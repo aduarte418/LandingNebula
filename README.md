@@ -57,9 +57,57 @@ Para el audio ambiente, se ha seleccionado un clip de audio recortado para que d
 
 ----------------------------------------
 
+
+**Justificación de Compatibilidad de Licencias**
+
+
+El tipo de licencia elegida para el proyecto de la Landing de Nebula es CC BY-NC-ND 4.0. Los recursos multimedia utilizados (extraídos de las webs Pixabay y Pexels) tienen licencias de libre uso no comercial (CC BY-NC), integrándose en la presente obra.
+
+
+En el hipotético escenario "¿Qué ocurriría si un recurso fuera CC BY-SA?", la cláusula SA (ShareAlike / CompartirIgual) obliga a que cualquier obra derivada que incorpore dicho recurso deba distribuirse estrictamente bajo la misma licencia o una compatible (CC BY-SA).
+Esto significa que si uno de mis recursos (como por ejemplo, una imagen de las nebulosas) tiene licencia CC BY-SA 4.0, el proyecto completo de la Landing no podría tener una licencia con cláusula No Comercial (NC) como CC BY-NC-SA ni restrictiva ("Todos los derechos reservados"), sino que habría que licenciar toda la Landing Page bajo CC BY-SA 4.0.
+
+
+
+**Verificación Cross-Browser y Responsive**
+
+Se ha comprobado que la página se visualiza y es funcional en diferente navegadores (Chrome, Edge y Firefox), pudiendo abrirse la landing, comprobar el feedback visual del logo, la galería dinámica, la reproducción del vídeo en ventana modal y el botón para reproducir el sonido ambiente.
+A continuación se muestran capturas que prueban la funcionalidad en cada navegador.
+
+*Chrome*
+
+Landing visualizada en Chrome
+![Captura Landing Chrome](assets/screenshots/image-7.png)
+
+Funcionalidad de la galería (cambia el tamaño de la miniatura ofreciendo feedback visual y actualiza la imagen principal)
+![Captura Miniatura Chrome](assets/screenshots/image-1.png)
+
+
+Vídeo en ventana modal
+![Captura Vídeo Modal Chrome](assets/screenshots/image-2.png)
+
+
+*Edge*
+
+Landing visualizada en Edge
+![Captura Landing Edge](assets/screenshots/image-4.png)
+
+Vídeo visualizado en la ventana modal en Edge
+![Captura Vídeo Modal Edge](assets/screenshots/image-3.png)
+
+*Firefox*
+Landing visualizada en Firefox
+![Captura Landing Firefox](assets/screenshots/image-5.png)
+
+Funcionalidad del audio teniendo lugar en Firefox
+![Captura Audio Firefox](assets/screenshots/image-6.png)
+
+
+Por último, se ha comprobado mediante las DevTools (F12) que la página y sus recursos son responsive para diferentes dispositivos, asegurando los controles táctiles en su versión para tablet y móvil (los botones cumplen el requisito de tener una dimensiones superiores a 44x44px). 
+
+![Captura DevTools](assets/screenshots/image.png)
+
 **Enlace a la página en Github Pages:**
 
 https://aduarte418.github.io/LandingNebula/
-
-
 

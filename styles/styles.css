@@ -1,19 +1,19 @@
 /* Estilo general para el body */
-body{
+body {
     background-color: #04024d;
     color: #ffffff;
     text-align: center;
-    background: linear-gradient(to bottom, #04024d,  #000000); 
+    background: linear-gradient(to bottom, #04024d, #000000);
 }
 
 /* Estilo de la barra de navegación */
-#navbar{
+#navbar {
     color: #ffffff;
     padding: 10px 0;
 }
 
 /* Estilo del flex para los elementos de la barra de navegación */
-#navbar ul{
+#navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -22,12 +22,12 @@ body{
 }
 
 /* Propiedad para el margen entre los elementos de la barra de navegación (lista) */
-#navbar li{
+#navbar li {
     margin: 0 50px;
 }
 
 /* Estilo del texto que actúa como enlace a las secciones */
-#navbar a{
+#navbar a {
     color: #ffffff;
     text-decoration: none;
     font-family: 'Press Start 2P', sans-serif;
@@ -35,18 +35,35 @@ body{
 }
 
 /* Estilo para el hover del enlace */
-#navbar a:hover{
+#navbar a:hover {
     color: #13bfeb;
 }
 
 /* Propiedades del contenedor de la zona Hero */
-#hero-zone{
+#hero-zone {
     margin: 20px auto;
     position: relative;
 }
 
+/* Estilo para la imagen hero */
+#img-hero {
+    transition: opacity 0.4s ease;
+    /*Transición suave*/
+}
+
+#img-hero img {
+    transition: opacity 0.3s ease;
+}
+
+/* Estilo para el hover sobre las imágenes del grid */
+.photo:hover {
+    transform: scale(95%);
+    cursor: pointer;
+
+}
+
 /* Estilo para el título */
-#title{
+#title {
     font-size: 6rem;
     color: #f0f0f0;
     font-family: 'Black Ops One', sans-serif;
@@ -57,7 +74,7 @@ body{
 }
 
 /* Estilo para el subtítulo */
-#subtitle{
+#subtitle {
     font-size: 2rem;
     color: #f0f0f0;
     font-family: 'Orbitron', sans-serif;
@@ -68,15 +85,16 @@ body{
 }
 
 /* Estilo para el grid que contiene los proyectos de Nebula */
-#grid{
+#grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
 }
 
+
 /* Estilo para el título "Mis proyectos" */
-#projects-title{
+#projects-title {
     font-size: 2rem;
     color: #f0f0f0;
     font-family: 'Black Ops One', sans-serif;
@@ -84,15 +102,24 @@ body{
     margin-bottom: 20px;
 }
 
+/* Estilo para el título "Galería Dinámica" */
+#galeria {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 /* Estilo para el título de los proyectos */
-.project h3{
+.project h3 {
     font-size: 1.5rem;
     color: #f0f0f0;
     font-family: 'Orbitron', sans-serif;
 }
 
 /* Estilo para el botón de contacto */
-.btn{
+.btn {
     background-color: #2d90c9;
     color: #ffffff;
     border: none;
@@ -108,12 +135,13 @@ body{
 }
 
 /* Estilo para el hover del botón */
-.btn:hover{
+.btn:hover {
     background-color: #13bfeb;
+    transform: scale(96%);
 }
 
 /* Estilo para la imagen del botón */
-#btn-img{
+#btn-img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -121,7 +149,7 @@ body{
 }
 
 /* Estilo para el texto del botón */
-.btn-text{
+.btn-text {
     font-size: 0.8em;
     position: absolute;
     top: 50%;
@@ -130,17 +158,118 @@ body{
 }
 
 /* Estilo para las citas de las imágenes */
-.cites{
+.cites {
     font-size: 0.8em;
     color: #cccccc;
     font-style: italic;
 }
 
 /* Estilo para el texto del footer */
-.foot-text{
+.foot-text {
     font-size: 0.7em;
     color: #cccccc;
     font-style: italic;
     font-family: 'Press Start 2P', sans-serif;
     text-align: center;
+}
+
+/* Estilos para el logo en el círculo */
+#iconoNebula {
+    cursor: pointer;
+    outline: none;
+}
+
+#circuloNebula {
+    background-color: #1271a8;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+#circuloNebula:hover {
+    fill: #33c2e6;
+}
+
+#circuloNebula:focus,
+#iconoNebula:focus #circuloNebula {
+    fill: #84daf0;
+}
+
+/* Feedback visual en las miniaturas de la galería */
+.photo {
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+/* Estilo para la ventana modal */
+.modal-container {
+    display: none;
+    /* Oculto por defecto, activado por JS */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #02012b;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilo para la ventana modal*/
+.modal-content {
+    position: relative;
+    max-width: 800px;
+    width: 90%;
+    background-color: #01001d;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #13bfeb;
+    box-shadow: 0 0 20px rgba(19, 191, 235, 0.5);
+}
+
+/*Estilo aplicado al cierre de la ventana modal*/
+#close-modal {
+    position: absolute;
+    top: -40px;
+    right: 5px;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+#close-modal:hover {
+    color: #13bfeb;
+}
+
+/* Estilo para la página de créditos */
+#creditos {
+    background-color: #02012b;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(to bottom, #04032c, #000000);
+}
+
+/* Estilo específico para el botón volver de credits.html con su enlace */
+#btn-volver {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#btn-volver a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }

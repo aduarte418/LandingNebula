@@ -1,8 +1,7 @@
 // Script para funcionalidades
 
-// ==========================================
-// 1. Galería Dinámica e Interactiva (Punto 2)
-// ==========================================
+// Galería Dinámica e Interactiva 
+
 // Acceder a los elementos con la clase "photo" (cada miniatura)
 const botonImg = document.getElementsByClassName("photo");
 // Acceder a la imagen hero (etiqueta <img> interior)
@@ -27,7 +26,6 @@ for (let i = 0; i < botonImg.length; i++) {
         }, 300);
     });
 }
-
 
 // Funcionalidad para el Video Reel
 // Elementos del DOM para el modal y el vídeo
@@ -57,7 +55,6 @@ modal.addEventListener("click", (evento) => {
         cerrarModal();
     }
 });
-
 
 // Nuevo Reproductor de Audio
 const btnAudio = document.getElementById("btn-audio");

@@ -51,6 +51,7 @@ body {
     /*Transición suave*/
 }
 
+/* Transición suave al cambiar la imagen */
 #img-hero img {
     transition: opacity 0.3s ease;
 }
@@ -59,7 +60,6 @@ body {
 .photo:hover {
     transform: scale(95%);
     cursor: pointer;
-
 }
 
 /* Estilo para el título */
@@ -91,7 +91,6 @@ body {
     gap: 20px;
     padding: 20px;
 }
-
 
 /* Estilo para el título "Mis proyectos" */
 #projects-title {
@@ -179,12 +178,14 @@ body {
     outline: none;
 }
 
+/* Estilo para el círculo del logo */
 #circuloNebula {
     background-color: #1271a8;
     cursor: pointer;
     transition: fill 0.3s ease;
 }
 
+/* Estilos para hover y focus en el circulo y la imagen svg */
 #circuloNebula:hover {
     fill: #33c2e6;
 }
@@ -194,7 +195,7 @@ body {
     fill: #84daf0;
 }
 
-/* Feedback visual en las miniaturas de la galería */
+/* Feedback visual en las miniaturas de la galería + hover */
 .photo {
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -232,7 +233,7 @@ body {
     box-shadow: 0 0 20px rgba(19, 191, 235, 0.5);
 }
 
-/*Estilo aplicado al cierre de la ventana modal*/
+/*Estilos aplicados al cierre de la ventana modal*/
 #close-modal {
     position: absolute;
     top: -40px;
@@ -256,7 +257,7 @@ body {
     background: linear-gradient(to bottom, #04032c, #000000);
 }
 
-/* Estilo específico para el botón volver de credits.html con su enlace */
+/* Estilo específico para el botón volver de credits.html + su enlace */
 #btn-volver {
     margin-top: 25px;
     margin-bottom: 30px;
